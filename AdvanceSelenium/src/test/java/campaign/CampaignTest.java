@@ -28,7 +28,7 @@ public class CampaignTest extends BaseClass{
 		HomePage hPage = new HomePage(driver);
 		hPage.getCampaigns().click();
 		
-		//FromCraateCampaign
+		//FromCreateCampaign
 		CreateCampaign cCampaign = new pom.CreateCampaign(driver);
 		cCampaign.getCreateCampaign().click();
 		cCampaign.getCampaignName().sendKeys(CAMPAIGN_NAME);
@@ -80,6 +80,7 @@ public class CampaignTest extends BaseClass{
 				WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 				wait.until(ExpectedConditions.visibilityOf(confmsg));
 				String sms = confmsg.getText();
+				
 				Assert.assertEquals(sms,"Campaign "+CAMPAIGN_NAME+" Successfully Added");
 				//driver.findElement(By.xpath("//button[@arialabel='close']")).click();
 				hPage.getClosemsg().click();
@@ -113,6 +114,7 @@ public class CampaignTest extends BaseClass{
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(confmsg));
 		String sms = confmsg.getText();
+		
 		Assert.assertEquals(sms,"Campaign "+CAMPAIGN_NAME+" Successfully Added");
 		hPage.getClosemsg().click();
 	}

@@ -2,7 +2,6 @@ package assignment;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.sql.Driver;
 import java.time.Duration;
 import java.util.Properties;
 import java.util.Set;

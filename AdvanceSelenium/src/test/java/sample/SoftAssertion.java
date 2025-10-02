@@ -10,7 +10,7 @@ public class SoftAssertion {
 	public void demo() {
 		String expectedtitle = ("Demo Web");
 		WebDriver driver=new ChromeDriver();
-		driver.get("https://demowebshop.tricentis.com/");
+		driver.get("https://www.youtube.com/");
 		String actualtitle = driver.getTitle();
 		SoftAssert soft=new SoftAssert();
 		

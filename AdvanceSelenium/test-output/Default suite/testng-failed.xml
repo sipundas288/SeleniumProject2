@@ -6,10 +6,10 @@
       <class name="campaign.CreateProductTest">
         <methods>
           <include name="afterTest"/>
-          <include name="beforeTest"/>
+          <include name="afterMethod"/>
           <include name="afterSuit"/>
           <include name="CreateProduct"/>
-          <include name="afterMethod"/>
+          <include name="beforeTest"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
           <include name="beforeSute"/>

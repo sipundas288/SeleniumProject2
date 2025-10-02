@@ -10,7 +10,7 @@ public class HardAssertion {
 	public void demo() {
 		String expectedtitle = ("Demo Web Shop");
 		WebDriver driver=new ChromeDriver();
-		driver.get("https://demowebshop.tricentis.com/");
+		driver.get("https://www.youtube.com/");
 		String actualtitle = driver.getTitle();
 		Assert.assertEquals(actualtitle, expectedtitle);
 		System.out.println("step1");

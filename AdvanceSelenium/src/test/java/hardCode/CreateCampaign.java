@@ -46,6 +46,7 @@ public class CreateCampaign {
 		Actions act = new Actions(driver);
 		act.moveToElement(icon).click().perform();
 		driver.findElement(By.xpath("//div[@class='dropdown-item logout']")).click();
+		
 	}
 
 }
